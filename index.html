@@ -142,5 +142,23 @@
   });
   </script>
 
+  <script>
+  document.querySelectorAll('.nav-links a[href^="#"]').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const destino = document.querySelector(this.getAttribute('href'));
+      if (destino) {
+        destino.scrollIntoView({ behavior: 'smooth' });
+      }
+
+      // Cierra el menú móvil si está abierto
+      const menuToggle = document.getElementById("menu");
+      if (menuToggle && menuToggle.checked) {
+        menuToggle.checked = false;
+      }
+    });
+  });
+</script>
+  
 </body>
 </html>
