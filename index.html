@@ -152,7 +152,10 @@
         e.preventDefault();
         const destino = document.querySelector(this.getAttribute("href"));
         if (destino) {
-          const offset = destino.offsetTop - 120; // compensar altura de la barra
+          const rect = destino.getBoundingClientRect();
+          const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+          const offset = rect.top + scrollTop - 120; // compensar altura de la barra
+
           window.scrollTo({
             top: offset,
             behavior: "smooth"
