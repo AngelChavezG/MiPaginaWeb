@@ -144,25 +144,36 @@
 
   <script>
   document.addEventListener("DOMContentLoaded", () => {
-    const links = document.querySelectorAll('.nav-links a[href^="#"]');
-    const menuToggle = document.getElementById("menu");
+    const sections = document.querySelectorAll("section, #inicio");
+    const navLinks = document.querySelectorAll(".nav-links a");
 
-    links.forEach(link => {
-      link.addEventListener("click", function(e) {
-        e.preventDefault();
-        const destino = document.querySelector(this.getAttribute("href"));
-        if (destino) {
-          destino.scrollIntoView({ behavior: "smooth", block: "start" });
-        }
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const id = entry.target.getAttribute("id");
+            navLinks.forEach(link => {
+              link.classList.remove("active");
+              if (link.getAttribute("href").includes(id)) {
+                link.classList.add("active");
+              }
+            });
+          }
+        });
+      },
+      {
+        root: null,
+        rootMargin: "-150px 0px -50% 0px", // ajusta según tu barra fija
+        threshold: 0.3
+      }
+    );
 
-        // Cierra el menú móvil si está abierto
-        if (menuToggle && menuToggle.checked) {
-          menuToggle.checked = false;
-        }
-      });
+    sections.forEach(section => {
+      observer.observe(section);
     });
   });
 </script>
+
 
 </body>
 </html>
