@@ -142,33 +142,5 @@
   });
   </script>
 
-  <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const links = document.querySelectorAll('.nav-links a[href^="#"]');
-    const menuToggle = document.getElementById("menu");
-
-    links.forEach(link => {
-      link.addEventListener("click", function(e) {
-        e.preventDefault();
-        const destino = document.querySelector(this.getAttribute("href"));
-        if (destino) {
-          const headerHeight = document.querySelector(".glass-header").offsetHeight;
-          const destinoTop = destino.getBoundingClientRect().top + window.pageYOffset - headerHeight - 20;
-
-          window.scrollTo({
-            top: destinoTop,
-            behavior: "smooth"
-          });
-        }
-
-        // Cierra el menú móvil si está abierto
-        if (menuToggle && menuToggle.checked) {
-          menuToggle.checked = false;
-        }
-      });
-    });
-  });
-</script>
-
 </body>
 </html>
