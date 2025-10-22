@@ -143,22 +143,26 @@
   </script>
 
   <script>
-  document.querySelectorAll('.nav-links a[href^="#"]').forEach(link => {
-    link.addEventListener('click', function(e) {
-      e.preventDefault();
-      const destino = document.querySelector(this.getAttribute('href'));
-      if (destino) {
-        destino.scrollIntoView({ behavior: 'smooth' });
-      }
+  document.addEventListener("DOMContentLoaded", () => {
+    const links = document.querySelectorAll('.nav-links a[href^="#"]');
+    const menuToggle = document.getElementById("menu");
 
-      // Cierra el menú móvil si está abierto
-      const menuToggle = document.getElementById("menu");
-      if (menuToggle && menuToggle.checked) {
-        menuToggle.checked = false;
-      }
+    links.forEach(link => {
+      link.addEventListener("click", function(e) {
+        e.preventDefault();
+        const destino = document.querySelector(this.getAttribute("href"));
+        if (destino) {
+          destino.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+
+        // Cierra el menú móvil si está abierto
+        if (menuToggle && menuToggle.checked) {
+          menuToggle.checked = false;
+        }
+      });
     });
   });
 </script>
-  
+
 </body>
 </html>
