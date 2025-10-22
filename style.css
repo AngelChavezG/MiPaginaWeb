@@ -7,15 +7,15 @@
   list-style: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Barlow', sans-serif;
   background: transparent;
   position: relative;
   z-index: 0;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 img {
@@ -50,8 +50,8 @@ img {
   transform: translateX(-50%);
   width: 96%;
   max-width: 1200px;
-  height: 70px; /* altura fija */
-  padding: 0 35px; /* elimina padding vertical */
+  height: 70px;
+  padding: 0 35px;
   display: flex;
   align-items: center;
   z-index: 100;
@@ -77,7 +77,6 @@ img {
   opacity: 0;
 }
 
-/* Ítems del menú ocultos al inicio */
 .glass-header ul li {
   opacity: 0;
 }
@@ -91,31 +90,19 @@ body.fonts-loaded .glass-header ul li {
 }
 
 @keyframes fadeInLogo {
-  0% {
-    opacity: 0;
-    transform: translateX(-30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
+  0% { opacity: 0; transform: translateX(-30px); }
+  100% { opacity: 1; transform: translateX(0); }
 }
 
 @keyframes slideDownNav {
-  0% {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
 }
 
 .nav-links {
   display: flex;
   gap: 20px;
-  justify-content: flex-end; /* ← esto los alinea a la derecha */
+  justify-content: flex-end;
   flex: 1;
 }
 
@@ -139,7 +126,7 @@ body.fonts-loaded .glass-header ul li {
   border-radius: 12px;
 }
 
-/* Responsive menú móvil */
+/* Menú móvil */
 .mobile-menu-toggle {
   display: none;
   flex-direction: column;
@@ -259,7 +246,12 @@ input[type="checkbox"] {
   padding-left: 20px;
 }
 
-/* Secciones del main */
+/* Secciones */
+section,
+#inicio {
+  scroll-margin-top: 140px;
+}
+
 main section {
   background-color: #FFFFFF;
   border-radius: 20px;
@@ -299,6 +291,7 @@ main section p {
   }
 }
 
+/* Glass effect */
 .glass-section {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(20px);
@@ -314,94 +307,4 @@ main section p {
 }
 
 .glass-section h2 {
-  background: linear-gradient(to bottom, #ffffff, #cce6ff);
-  color: #0044aa;
-  padding: 15px 25px;
-  border-radius: 15px;
-  font-size: 32px;
-  font-weight: 800;
-  font-family: "Barlow Semi Condensed", sans-serif;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  width: fit-content;
-}
-
-.glass-text {
-  flex: 1 1 50%;
-}
-
-.glass-text p {
-  font-size: 18px;
-  line-height: 1.6;
-  color: #ffffff;
-}
-
-.glass-image {
-  flex: 1 1 45%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.glass-image img {
-  max-width: 100%;
-  border-radius: 15px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-}
-
-/* Footer */
-.footer {
-  background-color: #ffffffd7;
-  color: #000000;
-  text-align: center;
-  padding: 30px 20px;
-  font-size: 16px;
-  margin-top: 50px;
-}
-
-.footer-content p {
-  margin: 10px 0;
-}
-
-/* Scroll */
-#inicio {
-  scroll-margin-top: 140px; /* ajusta según la altura de tu barra */
-}
-
-section {
-  scroll-margin-top: 120px; /* ajusta según la altura de tu barra */
-}
-
-/* Team members */
-.team-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 40px;
-  justify-items: center;
-  margin-top: 40px;
-}
-
-.team-member {
-  text-align: center;
-}
-
-.photo-circle {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-  margin-bottom: 15px;
-}
-
-.photo-circle img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.nombre {
-  font-size: 18px;
-  font-weight: 600;
-  color: #ffffff;
-}
+  background: linear-gradient(to bottom, #ffffff
