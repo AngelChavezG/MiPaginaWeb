@@ -141,6 +141,7 @@
     document.body.classList.add('fonts-loaded');
   });
   </script>
+
   <script>
   document.addEventListener("DOMContentLoaded", () => {
     const links = document.querySelectorAll('.nav-links a[href^="#"]');
@@ -151,7 +152,11 @@
         e.preventDefault();
         const destino = document.querySelector(this.getAttribute("href"));
         if (destino) {
-          destino.scrollIntoView({ behavior: "smooth", block: "start" });
+          const offset = destino.offsetTop - 120; // compensar altura de la barra
+          window.scrollTo({
+            top: offset,
+            behavior: "smooth"
+          });
         }
 
         // Cierra el menú móvil si está abierto
