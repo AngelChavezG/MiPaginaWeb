@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contacto - Equipo 3</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>La Inteligencia Artificial en el sector automotriz</title>
   <link rel="stylesheet" href="css/base.css" />
   <link rel="stylesheet" href="css/components.css" />
-  <link rel="stylesheet" href="css/contacto.css" />
 </head>
-<body>
-  <div class="neural-background"></div>
 
+<body>
+  <!-- Fondo de página web -->
+  <div class="neural-background"></div>
+  <!-- Barra de navegación glass -->
   <header class="glass-header">
     <nav class="nav-container">
-      <a href="index.html" class="logo">ISC Equipo 3</a>
+      <a href="#" class="logo">ISC Equipo 3</a>
       <label for="menu" class="mobile-menu-toggle">
         <span class="hamburger-line"></span>
         <span class="hamburger-line"></span>
@@ -21,86 +22,125 @@
       </label>
       <input type="checkbox" id="menu" />
       <ul class="nav-links">
-        <li><a href="index.html#inicio">Inicio</a></li>
-        <li><a href="index.html#ia">IA</a></li>
-        <li><a href="index.html#automotriz">Automotriz</a></li>
-        <li><a href="index.html#retos">Retos</a></li>
-        <li><a href="index.html#actualidad">Actualidad</a></li>
-        <li><a href="index.html#futuro">Futuro</a></li>
-        <li><a href="#sugerencias">Comentarios</a></li>
-
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#ia">IA</a></li>
+        <li><a href="#automotriz">Automotriz</a></li>
+        <li><a href="#retos">Retos</a></li>
+        <li><a href="#actualidad">Actualidad</a></li>
+        <li><a href="#futuro">Futuro</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
       </ul>
     </nav>
   </header>
-  
-  <!-- Contenedor glass para título y fotos con espaciado corregido -->
-   <section class="glass-section equipo" id="equipo">
-    <div class="equipo-header">
-      <h2>Conoce al equipo</h2>
+
+  <!-- Landing page -->
+  <div class="alineado-con-nav">
+    <div class="header-content" id="inicio">
+      <div class="header-txt">
+        <h1>La Inteligencia Artificial</h1>
+        <h2>en el sector automotriz</h2>
+        <p>¿Es posible un mundo con vehículos totalmente autónomos?</p>
+        <a href="#ia" class="btn">Conoce más</a>
+      </div>
+      <div class="header-img">
+        <img src="img/vehiculoAutonomo.jpg" alt="Vehículo autónomo" width="700" />
+      </div>
     </div>
+  </div>
+
+  <!-- Contenido de la página web -->
+  <main>
+    <section id="ia" class="glass-section">
+      <div class="glass-text">
+        <h2>¿Qué es la Inteligencia Artificial?</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel sem nec sapien tincidunt tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus euismod, justo a facilisis tincidunt, lorem sapien tincidunt justo, nec fermentum nulla lorem nec velit.</p>
+      </div>
+      <div class="glass-image">
+        <img src="img/vehiculoAutonomo.jpg" alt="Representación de IA" />
+      </div>
+    </section>
+
+    <section id="automotriz" class="glass-section">
+      <div class="glass-text">
+        <h2>Aplicaciones en el sector automotriz</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel sem nec sapien tincidunt tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus euismod, justo a facilisis tincidunt, lorem sapien tincidunt justo, nec fermentum nulla lorem nec velit.</p>
+      </div>
+      <div class="glass-image">
+        <img src="img/vehiculoAutonomo.jpg" alt="Representación de IA" />
+      </div>
+    </section>
     
-    <div class="team-grid">
-      <div class="team-member">
-        <div class="photo-circle">
-          <img src="img/persona.jpg" alt="Miembro del equipo 1" />
-        </div>
-        <p class="nombre">Carlo Corona Estrada</p>
+    <section id="retos" class="glass-section">
+      <div class="glass-text">
+        <h2>Retos actuales</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec lorem nec justo tincidunt tincidunt. Sed euismod, nisl vel fermentum tincidunt, nunc sapien tincidunt justo, nec facilisis lorem nulla nec velit. Integer ac turpis nec justo convallis tincidunt.</p>
       </div>
-      <div class="team-member">
-        <div class="photo-circle">
-          <img src="img/persona.jpg" alt="Miembro del equipo 2" />
-        </div>
-        <p class="nombre">Ángel Chávez García</p>
+      <div class="glass-image">
+        <img src="img/vehiculoAutonomo.jpg" alt="Representación de IA" />
       </div>
-      <div class="team-member">
-        <div class="photo-circle">
-          <img src="img/persona.jpg" alt="Miembro del equipo 3" />
-        </div>
-        <p class="nombre">Santiago Ramírez Saldaña</p>
-      </div>
-      <div class="team-member">
-        <div class="photo-circle">
-          <img src="img/persona.jpg" alt="Miembro del equipo 4" />
-        </div>
-        <p class="nombre">Federico Vargas López</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="glass-section formulario-retro" id="sugerencias">
-    <div class="formulario-columna">
-      <h2>Envíanos tus sugerencias</h2>
-      <form action="https://formspree.io/f/xwprgkbg" method="POST">
-        <input type="hidden" name="_next" value="index.html">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required />
-        
-        <label for="correo">Correo electrónico:</label>
-        <input type="email" id="correo" name="correo" required />
-        
-        <label for="mensaje">Comentario o sugerencia:</label>
-        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-        
-        <button type="submit">ENVIAR MENSAJE</button>
-      </form>
-    </div>
+    <section id="actualidad" class="glass-section">
+      <div class="glass-text">
+        <h2>Estado actual de la tecnología</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel sem nec sapien tincidunt tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus euismod, justo a facilisis tincidunt, lorem sapien tincidunt justo, nec fermentum nulla lorem nec velit.</p>
+      </div>
+      <div class="glass-image">
+        <img src="img/vehiculoAutonomo.jpg" alt="Representación de IA" />
+      </div>
+    </section>
 
-    <div class="formulario-imagen">
-      <img src="img/vehiculoAutonomo.jpg" alt="Imagen decorativa de sugerencias" />
-    </div>
-  </section>
+    <section id="futuro" class="glass-section">
+      <div class="glass-text">
+        <h2>Visión a futuro</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec lorem nec justo tincidunt tincidunt. Sed euismod, nisl vel fermentum tincidunt, nunc sapien tincidunt justo, nec facilisis lorem nulla nec velit. Integer ac turpis nec justo convallis tincidunt.</p>
+      </div>
+      <div class="glass-image">
+        <img src="img/vehiculoAutonomo.jpg" alt="Representación de IA" />
+      </div>
+    </section>
+  </main>
 
-  <footer class="footer">
+  <!-- Footer -->
+  <footer class="footer" id="contacto">
     <div class="footer-content">
-      <p>&copy; 2025 Derechos Reservados Equipo 3</p>
+      <p>&copy; 2025 Derechos Reservados Equipo 3 </p>
       <p>Proyectos de Ingeniería I - Grupo C.</p>
     </div>
   </footer>
 
+  <!-- Scroll -->
   <script>
-    document.fonts.ready.then(() => {
-      document.body.classList.add('fonts-loaded');
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll(".nav-links li a");
+  
+  window.addEventListener("scroll", () => {
+    let current = null;
+    let scrollY = window.scrollY;
+    
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 150;
+      const sectionHeight = section.offsetHeight;
+      
+      if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+        current = section.getAttribute("id");
+      }
     });
+    
+    navLinks.forEach(link => {
+      link.classList.remove("active");
+      if (current && link.getAttribute("href").includes(current)) {
+        link.classList.add("active");
+      }
+    });
+  });
   </script>
+
+  <script>
+  document.fonts.ready.then(() => {
+    document.body.classList.add('fonts-loaded');
+  });
+  </script>
+  
 </body>
 </html>
