@@ -70,7 +70,7 @@
   <section class="glass-section formulario-retro" id="sugerencias">
     <div class="formulario-columna">
       <h2>Envíanos tus sugerencias</h2>
-      <form action="https://formspree.io/f/xwprgkbg" method="POST">
+      <form action="https://formspree.io/f/xwprgkbg" method="POST" onsubmit="redirigir()">
         <input type="hidden" name="_next" value="index.html">
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" required />
@@ -102,6 +102,15 @@
       document.body.classList.add('fonts-loaded');
     });
   </script>
+
+  <script>
+  function redirigir() {
+    setTimeout(() => {
+      window.location.href = "index.html";
+    }, 100); // espera breve para que Formspree reciba los datos
+    return true; // permite que el formulario se envíe
+  }
+  </script>
+
 </body>
 </html>
-
