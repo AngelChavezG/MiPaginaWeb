@@ -4,72 +4,103 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contacto - Equipo 3</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/contacto.css" />
 </head>
 <body>
   <div class="neural-background"></div>
 
   <header class="glass-header">
     <nav class="nav-container">
-        <a href="index.html" class="logo">MiProyecto</a>
-        <label for="menu" class="mobile-menu-toggle">
-            <span class="hamburger-line"></span>
-            <span class="hamburger-line"></span>
-            <span class="hamburger-line"></span>
-        </label>
-        <input type="checkbox" id="menu" />
-        <ul class="nav-links">
-            <li><a href="index.html#inicio">Inicio</a></li>
-        </ul>
-    </nav>
-</header>
+      <a href="index.html" class="logo">ISC Equipo 3</a>
+      <label for="menu" class="mobile-menu-toggle">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </label>
+      <input type="checkbox" id="menu" />
+      <ul class="nav-links">
+        <li><a href="./index.html#inicio">Inicio</a></li>
+        <li><a href="./index.html#ia">IA</a></li>
+        <li><a href="./index.html#automotriz">Automotriz</a></li>
+        <li><a href="./index.html#retos">Retos</a></li>
+        <li><a href="./index.html#actualidad">Actualidad</a></li>
+        <li><a href="./index.html#futuro">Futuro</a></li>
+        <li><a href="./#sugerencias">Comentarios</a></li>
 
-  <main class="alineado-con-nav">
-    <section class="glass-section">
+      </ul>
+    </nav>
+  </header>
+  
+  <!-- Contenedor glass para título y fotos con espaciado corregido -->
+   <section class="glass-section equipo" id="equipo">
+    <div class="equipo-header">
       <h2>Conoce al equipo</h2>
-      <div class="team-grid">
-        <div class="team-member">
-          <div class="photo-circle">
-            <img src="img/persona.jpg" alt="Miembro del equipo 1" />
-          </div>
-          <p class="nombre">Nombre Apellido</p>
+    </div>
+    
+    <div class="team-grid">
+      <div class="team-member">
+        <div class="photo-circle">
+          <img src="img/persona.jpg" alt="Miembro del equipo 1" />
         </div>
-        <div class="team-member">
-          <div class="photo-circle">
-            <img src="img/persona.jpg" alt="Miembro del equipo 2" />
-          </div>
-          <p class="nombre">Nombre Apellido</p>
-        </div>
-        <div class="team-member">
-          <div class="photo-circle">
-            <img src="img/persona.jpg" alt="Miembro del equipo 3" />
-          </div>
-          <p class="nombre">Nombre Apellido</p>
-        </div>
-        <div class="team-member">
-          <div class="photo-circle">
-            <img src="img/persona.jpg" alt="Miembro del equipo 4" />
-          </div>
-          <p class="nombre">Nombre Apellido</p>
-        </div>
+        <p class="nombre">Carlo Corona Estrada</p>
       </div>
-    </section>
-  </main>
+      <div class="team-member">
+        <div class="photo-circle">
+          <img src="img/persona.jpg" alt="Miembro del equipo 2" />
+        </div>
+        <p class="nombre">Ángel Chávez García</p>
+      </div>
+      <div class="team-member">
+        <div class="photo-circle">
+          <img src="img/persona.jpg" alt="Miembro del equipo 3" />
+        </div>
+        <p class="nombre">Santiago Ramírez Saldaña</p>
+      </div>
+      <div class="team-member">
+        <div class="photo-circle">
+          <img src="img/persona.jpg" alt="Miembro del equipo 4" />
+        </div>
+        <p class="nombre">Federico Vargas López</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="glass-section formulario-retro" id="sugerencias">
+    <div class="formulario-columna">
+      <h2>Envíanos tus sugerencias</h2>
+      <form action="https://formspree.io/f/xwprgkbg" method="POST">
+        <input type="hidden" name="_next" value="index.html">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required />
+        
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required />
+        
+        <label for="mensaje">Comentario o sugerencia:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+        
+        <button type="submit">ENVIAR MENSAJE</button>
+      </form>
+    </div>
+
+    <div class="formulario-imagen">
+      <img src="img/vehiculoAutonomo.jpg" alt="Imagen decorativa de sugerencias" />
+    </div>
+  </section>
 
   <footer class="footer">
     <div class="footer-content">
-      <p>Derechos Reservados &copy; 2025 Equipo 3</p>
-      <p>Proyectos de Ingeniería I Grupo C.</p>
-      <p>Contacto: 203842@iberopuebla.mx</p>
+      <p>&copy; 2025 Derechos Reservados Equipo 3</p>
+      <p>Proyectos de Ingeniería I - Grupo C.</p>
     </div>
   </footer>
 
   <script>
-  document.fonts.ready.then(() => {
-    document.body.classList.add('fonts-loaded');
-  });
+    document.fonts.ready.then(() => {
+      document.body.classList.add('fonts-loaded');
+    });
   </script>
-
 </body>
-
 </html>
