@@ -79,7 +79,7 @@ img {
 }
 
 .glass-header ul li {
-  opacity: 0;
+  opacity: 1;
 }
 
 body.fonts-loaded .logo {
@@ -293,4 +293,5 @@ section {
 #equipo {
   scroll-margin-top: 120px;
   margin-top: 120px;
+
 }
