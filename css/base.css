@@ -263,7 +263,6 @@ main section h2 {
 
 main section p {
   font-size: 18px;
-  font-family: "Barlow Medium", sans-serif;
   line-height: 1.6;
   color: #333333;
 }
@@ -295,4 +294,5 @@ section {
   scroll-margin-top: 120px;
   margin-top: 120px;
 }
+
 
