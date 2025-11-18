@@ -152,3 +152,25 @@
   border-radius: 15px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
+
+/* ===========================
+   Responsive navegación
+   =========================== */
+@media (max-width: 768px) {
+  form label {
+    display: block;        /* asegura que cada label ocupe toda la línea */
+    text-align: left;      /* alinea el texto a la izquierda */
+    margin-bottom: 8px;    /* espacio debajo del label */
+    font-weight: 600;      /* opcional: resalta el texto */
+  }
+
+  form input,
+  form textarea {
+    width: 100%;           /* ocupan todo el ancho disponible */
+    margin-bottom: 16px;   /* espacio entre campos */
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  } 
+}
