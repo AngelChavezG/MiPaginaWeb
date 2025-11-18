@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contacto - Equipo 3</title>
+  <title>Contacto</title>
   <link rel="stylesheet" href="css/base.css" />
   <link rel="stylesheet" href="css/components.css" />
   <link rel="stylesheet" href="css/contacto.css" />
 </head>
 <body>
-  <div class="neural-background"></div>
+  <div class="blue-background"></div>
 
   <header class="glass-header">
     <nav class="nav-container">
@@ -27,69 +27,52 @@
         <li><a href="index.html#retos">Retos</a></li>
         <li><a href="index.html#actualidad">Actualidad</a></li>
         <li><a href="index.html#futuro">Futuro</a></li>
-        <li><a href="#sugerencias">Comentarios</a></li>
-
       </ul>
     </nav>
   </header>
-  
-  <!-- Contenedor glass para título y fotos con espaciado corregido -->
-   <section class="glass-section equipo" id="equipo">
-    <div class="equipo-header">
-      <h2>Conoce al equipo</h2>
-    </div>
-    
-    <div class="team-grid">
-      <div class="team-member">
-        <div class="photo-circle">
-          <img src="img/persona.jpg" alt="Miembro del equipo 1" />
-        </div>
-        <p class="nombre">Carlo Corona Estrada</p>
-      </div>
-      <div class="team-member">
-        <div class="photo-circle">
-          <img src="img/persona.jpg" alt="Miembro del equipo 2" />
-        </div>
-        <p class="nombre">Ángel Chávez García</p>
-      </div>
-      <div class="team-member">
-        <div class="photo-circle">
-          <img src="img/persona.jpg" alt="Miembro del equipo 3" />
-        </div>
-        <p class="nombre">Santiago Ramírez Saldaña</p>
-      </div>
-      <div class="team-member">
-        <div class="photo-circle">
-          <img src="img/persona.jpg" alt="Miembro del equipo 4" />
-        </div>
-        <p class="nombre">Federico Vargas López</p>
-      </div>
-    </div>
-  </section>
 
-  <section class="glass-section formulario-retro" id="sugerencias">
-    <div class="formulario-columna">
-      <h2>Envíanos tus sugerencias</h2>
-      <form id="formulario">
-        <label for="nombre">Nombre:</label>
-        <input type="text" name="nombre" required>
-        <label for="correo">Correo electrónico:</label>
-        <input type="email" name="email" required>
-        <label for="mensaje">Comentario o sugerencia:</label>
-        <textarea name="mensaje" required></textarea>
-        <button type="submit">Enviar</button>
-      </form>
-    </div>
+  <main>
+    <section class="glass-section formulario-retro" id="sugerencias">
+      <div class="formulario-columna">
+        <h2>Envíanos tus sugerencias</h2>
+        <form id="formulario">
+          <label for="nombre">Nombre:</label>
+          <input type="text" name="nombre" required>
+          <label for="correo">Correo electrónico:</label>
+          <input type="email" name="email" required>
+          <label for="mensaje">Comentario o sugerencia:</label>
+          <textarea name="mensaje" required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+      
+      <div class="formulario-imagen">
+        <img src="img/vehiculoAutonomo.jpg" alt="Imagen decorativa de sugerencias" />
+      </div>
+    </section>
+  </main>
 
-    <div class="formulario-imagen">
-      <img src="img/vehiculoAutonomo.jpg" alt="Imagen decorativa de sugerencias" />
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <!-- Logo SVG -->
+         <a href="https://www.iberopuebla.mx/" class="footer-logo">
+          <img src="assets/logo.svg" alt="Logo IBERO Puebla" width="120" height="40">
+        </a>
+      </div>
+      <nav class="footer-right">
+        <ul class="footer-links">
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="acercade.html">Acerca de</a></li>
+          <li><a href="https://www.iberopuebla.mx/aviso-de-privacidad">Aviso de privacidad</a></li>
+          <li><a href="https://www.iberopuebla.mx/terminos-y-condiciones">Términos y condiciones</a></li>
+        </ul>
+      </nav>
     </div>
-  </section>
-
-  <footer class="footer">
-    <div class="footer-content">
-      <p>&copy; 2025 Derechos Reservados Equipo 3</p>
-      <p>Proyectos de Ingeniería I - Grupo C.</p>
+    <div class="footer-copy">
+      <p>© 2025 ISC Equipo 3. Todos los derechos reservados.</p>
+      <p>Proyectos de Ingeniería I Grupo C</p>
     </div>
   </footer>
 
