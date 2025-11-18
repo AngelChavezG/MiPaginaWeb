@@ -1,14 +1,6 @@
 /* Contenedor glass general */
 .glass-section.equipo {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(20px);
-  border-radius: 20px;
-  padding: 60px 40px;
-  max-width: 1200px;
   margin: 60px auto;
-  color: #1F0C42;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-  
 }
 
 /* Título separado visualmente */
@@ -19,16 +11,14 @@
 }
 
 .equipo-header h2 {
-  background: linear-gradient(to bottom, #ffffff, #cce6ff);
-  color: #0044aa;
-  padding: 15px 25px;
-  border-radius: 15px;
-  font-size: 32px;
-  font-weight: 800;
-  font-family: "Barlow Semi Condensed", sans-serif;
-  text-transform: uppercase;
-  display: inline-block;
-  margin: 0; /* ← elimina márgenes que lo centren */
+  color: #ffffff;                        /* Color del texto del título */
+  font-family: "Special Gothic", sans-serif; /* Tipografía específica */
+  font-optical-sizing: auto;             /* Ajuste óptico automático de la fuente variable */
+  font-variation-settings: "wght" 670, "wdth" 75; /* Peso y ancho personalizados (semibold, condensed) */
+  font-size: 36px;                       /* Tamaño de fuente */
+  margin-bottom: 20px;                   /* Espacio inferior respecto al siguiente elemento */
+  width: fit-content;                    /* El ancho se ajusta al texto */
+  position: relative;                    /* Necesario para posicionar el pseudo-elemento ::after */
 }
 
 /* Grid horizontal de fotos */
@@ -37,6 +27,7 @@
   box-sizing: border-box;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  flex: 1 1 45%;
   gap: 40px;
   justify-items: center;
 }
@@ -61,8 +52,8 @@
 }
 
 .nombre {
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 400;
   color: #ffffff;
 }
 
@@ -72,27 +63,34 @@
   border-radius: 20px;
   padding: 60px 40px;
   max-width: 1200px;
-  margin: 60px auto;
+  margin-top: 120px;
   color: #1F0C42;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  align-items: stretch;
 }
 
 .formulario-retro h2 {
-  font-size: 28px;
+  font-size: 36px;
   margin-bottom: 30px;
-  color: #0044aa;
+  color: #ffffff;
   text-align: left;
 }
 
 .formulario-retro form {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
   align-items: stretch;
 }
 
 .formulario-retro label {
-  font-weight: 600;
+  font-weight: 500;
+  font-size: 18px;
   color: #ffffff;
 }
 
@@ -101,14 +99,13 @@
   padding: 12px 16px;
   border-radius: 10px;
   border: none;
-  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 16px;
   background-color: rgba(255, 255, 255, 0.8);
   width: 100%;               /* Ocupa todo el ancho disponible */
-  max-width: 500px;          /* Elimina cualquier límite de ancho */
+  max-width: 600px;          /* Elimina cualquier límite de ancho */
   display: block;            /* Asegura que no se limiten por inline */
-  margin-left: 0;
-  margin-right: auto; 
+  margin: 0 auto; 
   box-sizing: border-box;           /* Centra los campos si el contenedor es más ancho */
 }
 
@@ -118,14 +115,16 @@
   padding: 12px 16px;
   border: none;
   border-radius: 10px;
-  font-family: "Barlow Semi Condensed", sans-serif;
-  font-weight: bold;
+  font-family: "Special Gothic", sans-serif; /* Tipografía */
+  font-optical-sizing: auto;             /* Ajuste óptico automático */
+  font-variation-settings: "wght" 500, "wdth" 87.5; /* Peso y ancho (semibold, semicondensed) */
+  font-size: 16px;                       /* Tamaño de fuente */
+  text-transform: uppercase;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  max-width: 500px;
+  max-width: 600px;
   width: 100%;
-  margin-left: 0;
-  margin-right: auto;
+  margin: 0 auto;
   display: block;
   box-sizing: border-box;
 }
@@ -134,16 +133,8 @@
   background-color: #023685;
 }
 
-.formulario-retro {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 40px;
-  align-items: stretch;
-}
-
 .formulario-columna {
-  flex: 1 1 55%;
+  flex: 1 1 45%;
   min-width: 300px;
 }
 
