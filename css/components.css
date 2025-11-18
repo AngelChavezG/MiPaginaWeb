@@ -9,7 +9,6 @@
   transform: translateX(-50%); /* Centrada horizontalmente */
   width: 100%;
   max-width: 1200px;
-   margin: 0 auto;
   height: 70px;
   padding: 0 35px;
   display: flex;
@@ -288,50 +287,19 @@ input[type="checkbox"] {
 
 /* Responsive navegación */
 @media (max-width: 768px) {
-  .header-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    box-sizing: border-box;
-     width: 100%;
-    max-width: 100%;
-     margin: 0 auto;
-    overflow-x: hidden;
+  .glass-header {
+  position: fixed;
+  top: 0;
+  left: 40%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 1200px;   /* igual que las secciones */
+  margin-top: 20px;
+  padding: 0 35px;
+  box-sizing: border-box; /* incluye padding/border en el cálculo */
+  border-radius: 20px;
+  /* resto de estilos */
   }
-
-  .header-txt h1 {
-    font-size: clamp(26px, 6vw, 28px); /* escala según ancho */
-    text-align: center;
-    word-break: break-word;
-    max-width: 90vw;                   /* evita que se extienda demasiado */
-    margin: 0 auto;
-  }
-
-  .header-txt h2 {
-    font-size: clamp(22px, 5vw, 24px);
-    text-align: center;
-    margin: 10px auto;
-  }
-
-  .header-txt p {
-    font-size: 16px;
-    text-align: center;
-    margin: 10px auto;
-  }
-
-  .header-img img {
-    width: 100%;
-    height: auto;
-    max-width: 500px;
-  }
-
-  .btn {
-    font-size: 16px;
-    padding: 10px 20px;
-    margin-top: 15px;
-  }
-
 
   .mobile-menu-toggle {
     display: flex; /* visible en móvil */
@@ -355,7 +323,4 @@ input[type="checkbox"] {
     display: flex;
     animation: slideDownNav 0.4s ease-out;
   }
-
 }
-
-
