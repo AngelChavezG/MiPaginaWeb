@@ -381,6 +381,13 @@ input[type="checkbox"] {
     padding: 30px 20px;       /* reduce padding para móvil */
   }
 
+  .glass-section h2,
+  .glass-section h3 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .glass-text {
     flex: 1 1 auto;
     padding-right: 0;         /* elimina espacio lateral */
@@ -436,4 +443,5 @@ input[type="checkbox"] {
   }
    
 }
+
 
