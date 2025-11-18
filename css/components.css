@@ -275,10 +275,12 @@ input[type="checkbox"] {
   .glass-header {
     left: 0;
     transform: none;
-    width: calc(100% - 20px); /* ajusta al viewport */
-    margin: 10px auto;
-    height: auto;             /* altura flexible */
-    padding: 10px 20px;
+    width: 100%;              /* ocupa todo el ancho */
+    max-width: 100%;          /* evita límite de 1200px */
+    margin: 10px 0;           /* margen superior/inferior */
+    padding: 10px 15px;       /* padding compacto */
+    box-sizing: border-box;   /* incluye padding/border en el cálculo */
+    height: auto;
   }
 
   .mobile-menu-toggle {
@@ -344,14 +346,20 @@ input[type="checkbox"] {
 
   .glass-image img {
     width: 100%;
+    height: auto;             /* altura flexible */
     max-height: 200px;
     object-fit: cover;
+    border-radius: 15px 15px 0 0;
   }
 
   .glass-image figcaption {
+    display: block;           /* asegura que se muestre */
     width: 100%;
     font-size: 14px;
     padding: 6px 10px;
+    background: #e7e7e7;
+    color: #000;
+    border-radius: 0 0 15px 15px;
   }
 
   /* --- Footer --- */
