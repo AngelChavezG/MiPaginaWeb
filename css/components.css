@@ -293,7 +293,6 @@ input[type="checkbox"] {
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
-  margin: 0 auto;              /* centra horizontalmente */
   max-width: 1200px;   /* igual que las secciones */
   margin-top: 20px;
   padding: 0 35px;
@@ -326,6 +325,7 @@ input[type="checkbox"] {
   }
 
 }
+
 
 
 
