@@ -287,40 +287,32 @@ input[type="checkbox"] {
 
 /* Responsive navegación */
 @media (max-width: 768px) {
+  /* Barra de navegación */
   .glass-header {
-  position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  max-width: 1200px;   /* igual que las secciones */
-  margin-top: 20px;
-  padding: 0 35px;
-  box-sizing: border-box; /* incluye padding/border en el cálculo */
-  border-radius: 20px;
-  /* resto de estilos */
+    position: sticky;
+    top: 0;
+    width: 100%;          /* ocupa todo el ancho disponible */
+    max-width: 100%;      /* no más que el viewport */
+    margin: 0 auto;       /* centra igual que las secciones */
+    padding: 8px 15px;
+    box-sizing: border-box;
+    border-radius: 0;
+    z-index: 1000;
   }
 
-  .mobile-menu-toggle {
-    display: flex; /* visible en móvil */
+  /* Contenedores principales */
+  .alineado-con-nav,
+  .glass-section,
+  .footer-container,
+  .formulario-retro {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
   }
 
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    gap: 20px;
-    background: rgba(0, 0, 0, 0.95);
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    padding: 30px;
-    border-radius: 20px;
-    text-align: center;
-  }
-
-  #menu:checked ~ .nav-links {
-    display: flex;
-    animation: slideDownNav 0.4s ease-out;
+  body {
+    overflow-x: hidden;   /* elimina scroll lateral */
   }
 }
