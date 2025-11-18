@@ -324,7 +324,57 @@ input[type="checkbox"] {
     animation: slideDownNav 0.4s ease-out;
   }
 
+  /* Contenedor del header */
+  .header-content {
+    width: 100%;             /* ocupa todo el viewport */
+    max-width: 100%;         /* igual que las secciones en móvil */
+    margin: 0 auto;          /* centrado */
+    padding: 0 16px;         /* mismo padding lateral que las secciones */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;  /* apila texto e imagen */
+    align-items: center;
+  }
+
+  /* Texto del header */
+  .header-txt h1 {
+    font-size: 22px !important;  /* tamaño reducido */
+    line-height: 1.2;
+    text-align: center;
+    word-break: break-word;
+    margin: 0 auto;
+    max-width: 90vw;             /* evita desbordes */
+  }
+
+  .header-txt h2 {
+    font-size: 18px !important;
+    text-align: center;
+    margin: 8px 0;
+  }
+
+  .header-txt p {
+    font-size: 16px;
+    text-align: center;
+    margin: 8px 0;
+  }
+
+  /* Imagen del header */
+  .header-img img {
+    width: 100%;        /* se adapta al ancho disponible */
+    height: auto;
+    max-width: 500px;   /* límite visual */
+    margin-top: 12px;
+  }
+
+  /* Botón */
+  .btn {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-top: 12px;
+  }
+
 }
+
 
 
 
