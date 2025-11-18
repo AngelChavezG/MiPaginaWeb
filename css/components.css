@@ -286,19 +286,23 @@ input[type="checkbox"] {
 }
 
 /* Responsive navegación */
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .glass-header {
-  position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  max-width: 1200px;   /* igual que las secciones */
-  margin-top: 20px;
-  padding: 0 35px;
-  box-sizing: border-box; /* incluye padding/border en el cálculo */
-  border-radius: 20px;
-  /* resto de estilos */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 100%;        /* igual que las secciones */
+    margin: 0 auto;         /* centra igual que el resto */
+    padding: 8px 15px;      /* padding compacto */
+    box-sizing: border-box; /* evita que el padding sume ancho extra */
+    overflow-x: hidden;     /* elimina scroll lateral */
+    border-radius: 0;       /* opcional: encaja exacto */
+  }
+
+  body {
+    overflow-x: hidden;     /* asegura que nada se desborde */
   }
 
   .mobile-menu-toggle {
