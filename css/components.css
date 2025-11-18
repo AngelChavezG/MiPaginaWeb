@@ -9,6 +9,7 @@
   transform: translateX(-50%); /* Centrada horizontalmente */
   width: 100%;
   max-width: 1200px;
+   margin: 0 auto;
   height: 70px;
   padding: 0 35px;
   display: flex;
@@ -354,3 +355,4 @@ input[type="checkbox"] {
   }
 
 }
+
