@@ -293,12 +293,12 @@ input[type="checkbox"] {
     align-items: center;
     padding: 20px;
     box-sizing: border-box;
-    max-width: 85%;
+    max-width: 80%;
     overflow-x: hidden;
   }
 
   .header-txt h1 {
-    font-size: clamp(24px, 6vw, 28px); /* escala según ancho */
+    font-size: clamp(26px, 6vw, 28px); /* escala según ancho */
     text-align: center;
     word-break: break-word;
     max-width: 90vw;                   /* evita que se extienda demasiado */
@@ -306,7 +306,7 @@ input[type="checkbox"] {
   }
 
   .header-txt h2 {
-    font-size: clamp(20px, 5vw, 24px);
+    font-size: clamp(22px, 5vw, 24px);
     text-align: center;
     margin: 10px auto;
   }
@@ -354,5 +354,6 @@ input[type="checkbox"] {
   }
 
 }
+
 
 
