@@ -328,6 +328,7 @@ input[type="checkbox"] {
   .header-content {
     width: 100%;             /* ocupa todo el viewport */
     max-width: 100%;         /* igual que las secciones en móvil */
+    margin: 40px auto 0;
     margin: 0 auto;          /* centrado */
     padding: 0 16px;         /* mismo padding lateral que las secciones */
     box-sizing: border-box;
@@ -374,6 +375,7 @@ input[type="checkbox"] {
   }
 
 }
+
 
 
 
