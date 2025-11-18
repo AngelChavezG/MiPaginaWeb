@@ -293,7 +293,7 @@ input[type="checkbox"] {
     align-items: center;
     padding: 20px;
     box-sizing: border-box;
-    max-width: 90%;
+    max-width: 85%;
     overflow-x: hidden;
   }
 
@@ -354,4 +354,5 @@ input[type="checkbox"] {
   }
 
 }
+
 
