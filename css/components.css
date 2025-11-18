@@ -323,4 +323,15 @@ input[type="checkbox"] {
     display: flex;
     animation: slideDownNav 0.4s ease-out;
   }
+
+  .header-txt h1 {
+    font-size: 28px;            /* reduce tamaño */
+    text-align: center;
+    word-break: break-word;
+  }
+
+  .header-txt h2 {
+    font-size: 22px;
+    text-align: center;
+  }
 }
