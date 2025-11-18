@@ -11,7 +11,6 @@
   max-width: 1200px;
   height: 70px;
   padding: 0 35px;
-  box-sizing: border-box; /* incluye padding/border en el cálculo */
   display: flex;
   align-items: center;
   z-index: 100;
@@ -287,19 +286,19 @@ input[type="checkbox"] {
 }
 
 /* Responsive navegación */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .glass-header {
-    position: fixed;
-    top: 0;
-    left: 0;                  /* alineado al borde izquierdo */
-    transform: none;          /* elimina el translate */
-    width: 100%;              /* ocupa todo el viewport */
-    max-width: 100%;          /* evita límite mayor */
-    margin: 10px 0;           /* margen superior/inferior */
-    padding: 10px 15px;       /* padding compacto */
-    box-sizing: border-box;   /* incluye padding/border en el cálculo */
-    overflow-x: hidden;       /* evita scroll lateral */
-    border-radius: 0;         /* opcional: quita radios para que encaje exacto */
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1200px;   /* igual que las secciones */
+  margin-top: 20px;
+  padding: 0 35px;
+  box-sizing: border-box; /* incluye padding/border en el cálculo */
+  border-radius: 20px;
+  /* resto de estilos */
   }
 
   .mobile-menu-toggle {
