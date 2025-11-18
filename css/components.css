@@ -287,32 +287,46 @@ input[type="checkbox"] {
 
 /* Responsive navegación */
 @media (max-width: 768px) {
-  /* Barra de navegación */
   .glass-header {
     position: sticky;
     top: 0;
-    width: 100%;          /* ocupa todo el ancho disponible */
-    max-width: 100%;      /* no más que el viewport */
-    margin: 0 auto;       /* centra igual que las secciones */
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 1200px;        /* igual que las secciones */
+    margin: 0 auto;           /* centra la barra */
     padding: 8px 15px;
     box-sizing: border-box;
     border-radius: 0;
     z-index: 1000;
   }
 
-  /* Contenedores principales */
-  .alineado-con-nav,
-  .glass-section,
-  .footer-container,
-  .formulario-retro {
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0 15px;
-    box-sizing: border-box;
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.95);
+    padding: 20px;
+    border-radius: 0 0 20px 20px;
+    text-align: center;
+    z-index: 999;
+  }
+
+  #menu:checked ~ .nav-links {
+    display: flex;
   }
 
   body {
-    overflow-x: hidden;   /* elimina scroll lateral */
+    overflow-x: hidden;
   }
 }
