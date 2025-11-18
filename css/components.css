@@ -291,7 +291,7 @@ input[type="checkbox"] {
   position: fixed;
   top: 0;
   left: 40%;
-  transform: translateX(-30%);
+  transform: translateX(-40%);
   width: 90%;
   max-width: 1200px;   /* igual que las secciones */
   margin-top: 20px;
@@ -325,3 +325,4 @@ input[type="checkbox"] {
   }
 
 }
+
