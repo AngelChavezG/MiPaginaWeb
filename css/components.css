@@ -373,6 +373,41 @@ input[type="checkbox"] {
     margin-top: 12px;
   }
 
+  .glass-section {
+    flex-direction: column;   /* apila texto e imagen */
+    align-items: center;      /* centra horizontalmente */
+    text-align: center;       /* centra el texto */
+    gap: 20px;                /* espacio entre texto e imagen */
+    padding: 30px 20px;       /* reduce padding para móvil */
+  }
+
+  .glass-text {
+    flex: 1 1 auto;
+    padding-right: 0;         /* elimina espacio lateral */
+    width: 100%;
+  }
+
+  .glass-image,
+  .glass-image-group {
+    flex: 1 1 auto;
+    width: 100%;              /* ocupa todo el ancho disponible */
+    max-width: 500px;         /* límite visual */
+    margin-top: 16px;
+  }
+
+  .glass-image img {
+    width: 100%;
+    height: auto;             /* ya no altura fija */
+    border-radius: 15px;
+  }
+
+  .glass-image figcaption {
+    font-size: 14px;
+    padding: 8px 12px;
+    text-align: center;
+    width: 100%;
+  }
+
   .footer-container {
     flex-direction: column;   /* apila logo y enlaces */
     justify-content: center;  /* centra verticalmente */
@@ -401,3 +436,4 @@ input[type="checkbox"] {
   }
    
 }
+
