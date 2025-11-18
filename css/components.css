@@ -289,14 +289,17 @@ input[type="checkbox"] {
 /* Responsive navegación */
 @media (max-width: 768px) {
   .glass-header {
-    left: 0;
-    transform: none;
-    width: 100%;
-    max-width: 100%;        /* evita que se pase del viewport */
-    margin: 10px auto;
-    padding: 10px 15px;
-    box-sizing: border-box;
-    overflow-x: hidden;     /* elimina scroll lateral */
+    position: fixed;
+    top: 0;
+    left: 0;                  /* alineado al borde izquierdo */
+    transform: none;          /* elimina el translate */
+    width: 100%;              /* ocupa todo el viewport */
+    max-width: 100%;          /* evita límite mayor */
+    margin: 10px 0;           /* margen superior/inferior */
+    padding: 10px 15px;       /* padding compacto */
+    box-sizing: border-box;   /* incluye padding/border en el cálculo */
+    overflow-x: hidden;       /* evita scroll lateral */
+    border-radius: 0;         /* opcional: quita radios para que encaje exacto */
   }
 
   .mobile-menu-toggle {
