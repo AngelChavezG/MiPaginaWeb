@@ -287,12 +287,6 @@ input[type="checkbox"] {
 
 /* Responsive navegación */
 @media (max-width: 768px) {
-.blue-background {
-    background: linear-gradient(150deg, #0f1440 0%, #0033aa 100%);
-    background-size: 200% 200%;       /* menos complejo que 300% */
-    animation: gradientShift 15s linear infinite; /* animación más ligera */
-    will-change: background-position; /* optimización */
-  }
   .glass-header {
   position: fixed;
   top: 0;
@@ -466,4 +460,5 @@ input[type="checkbox"] {
   }
    
 }
+
 
