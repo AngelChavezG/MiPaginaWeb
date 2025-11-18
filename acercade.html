@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acerca de</title>
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/contacto.css" />
+</head>
+<body>
+  <div class="blue-background"></div>
+
+  <header class="glass-header">
+    <nav class="nav-container">
+      <a href="index.html" class="logo">ISC Equipo 3</a>
+      <label for="menu" class="mobile-menu-toggle">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </label>
+      <input type="checkbox" id="menu" />
+      <ul class="nav-links">
+        <li><a href="index.html#inicio">Inicio</a></li>
+        <li><a href="index.html#ia">IA</a></li>
+        <li><a href="index.html#automotriz">Automotriz</a></li>
+        <li><a href="index.html#retos">Retos</a></li>
+        <li><a href="index.html#actualidad">Actualidad</a></li>
+        <li><a href="index.html#futuro">Futuro</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Contenedor glass para título y fotos con espaciado -->
+    <section class="glass-section equipo" id="equipo">
+      <div class="glass-text">
+        <h3>Opinión</h3>
+        <h2>Aplicaciones en el sector automotriz</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel sem nec sapien tincidunt tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus euismod, justo a facilisis tincidunt, lorem sapien tincidunt justo, nec fermentum nulla lorem nec velit.</p>
+      </div>
+      
+      <div class="team-grid">
+        <div class="team-member">
+          <div class="photo-circle">
+            <img src="img/persona.jpg" alt="Miembro del equipo 1" />
+          </div>
+          <p class="nombre">Carlo Corona Estrada</p>
+        </div>
+        
+        <div class="team-member">
+          <div class="photo-circle">
+            <img src="img/persona.jpg" alt="Miembro del equipo 2" />
+          </div>
+          <p class="nombre">Ángel Chávez García</p>
+        </div>
+        
+        <div class="team-member">
+          <div class="photo-circle">
+            <img src="img/persona.jpg" alt="Miembro del equipo 3" />
+          </div>
+          <p class="nombre">Santiago Ramírez Saldaña</p>
+        </div>
+        <div class="team-member">
+          <div class="photo-circle">
+            <img src="img/persona.jpg" alt="Miembro del equipo 4" />
+          </div>
+          <p class="nombre">Federico Vargas López</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <!-- Logo SVG -->
+         <a href="https://www.iberopuebla.mx/" class="footer-logo">
+          <img src="assets/logo.svg" alt="Logo IBERO Puebla" width="120" height="40">
+        </a>
+      </div>
+      <nav class="footer-right">
+        <ul class="footer-links">
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="acercade.html">Acerca de</a></li>
+          <li><a href="https://www.iberopuebla.mx/aviso-de-privacidad">Aviso de privacidad</a></li>
+          <li><a href="https://www.iberopuebla.mx/terminos-y-condiciones">Términos y condiciones</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-copy">
+      <p>© 2025 ISC Equipo 3. Todos los derechos reservados.</p>
+      <p>Proyectos de Ingeniería I Grupo C</p>
+    </div>
+  </footer>
+
+  <script>
+    document.fonts.ready.then(() => {
+      document.body.classList.add('fonts-loaded');
+    });
+  </script>
+
+</body>
+</html>
