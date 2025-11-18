@@ -87,17 +87,6 @@ body.fonts-loaded .glass-header ul li {
 }
 
 /* ===========================
-   Menú móvil (hamburguesa)
-   =========================== */
-input[type="checkbox"] {
-  position: absolute;
-  opacity: 0;          /* invisible */
-  pointer-events: none; /* no interactúa directamente */
-  height: 0;
-  width: 0;
-}
-
-/* ===========================
    Sección tipo glass
    =========================== */
 .glass-section {
@@ -266,34 +255,50 @@ input[type="checkbox"] {
   margin: 0;            /* Elimina margen extra */
 }
 
-/* ===========================
-   Responsive general (máx 768px)
-   =========================== */
-@media (max-width: 768px) {
+/* Ocultar el checkbox sin cuadrito */
+input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  height: 0;
+  width: 0;
+}
 
-  /* --- Header / Navegación --- */
+/* Botón hamburguesa */
+.mobile-menu-toggle {
+  display: none; /* oculto en escritorio */
+  flex-direction: column;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hamburger-line {
+  width: 25px;
+  height: 3px;
+  background: #00aaff;
+  margin: 3px 0;
+  border-radius: 2px;
+}
+
+/* Responsive navegación */
+@media (max-width: 768px) {
   .glass-header {
     left: 0;
     transform: none;
-    width: 100%;              /* ocupa todo el ancho */
-    max-width: 100%;          /* evita límite de 1200px */
-    margin: 10px 0;           /* margen superior/inferior */
-    padding: 10px 15px;       /* padding compacto */
-    box-sizing: border-box;   /* incluye padding/border en el cálculo */
+    width: 100%;
+    max-width: 100%;
+    margin: 10px 0;
+    padding: 10px 15px;
+    box-sizing: border-box;
     height: auto;
+    overflow-x: hidden; /* evita scroll lateral */
   }
 
   .mobile-menu-toggle {
-    display: flex;
-    padding: 12px;            /* área táctil más cómoda */
-  }
-
-  input[type="checkbox"] {
-    position: absolute;
-    opacity: 0;               /* oculto sin cuadrito */
-    pointer-events: none;
-    height: 0;
-    width: 0;
+    display: flex; /* visible en móvil */
   }
 
   .nav-links {
@@ -313,122 +318,5 @@ input[type="checkbox"] {
   #menu:checked ~ .nav-links {
     display: flex;
     animation: slideDownNav 0.4s ease-out;
-  }
-
-  /* --- Secciones glass --- */
-  .glass-section {
-    flex-direction: column;
-    gap: 20px;
-    padding: 30px 20px;
-  }
-
-  .glass-section h2 {
-    font-size: 28px;
-    text-align: left;
-    width: 100%;
-  }
-
-  .glass-section h3 {
-    font-size: 18px;
-    text-align: left;
-    width: 100%;
-  }
-
-  .glass-text { order: 1; }
-  .glass-image,
-  .glass-image-group { order: 2; }
-
-  .glass-image {
-    flex-direction: column;
-    height: auto;
-    max-height: 200px;
-  }
-
-  .glass-image img {
-    width: 100%;
-    height: auto;             /* altura flexible */
-    max-height: 200px;
-    object-fit: cover;
-    border-radius: 15px 15px 0 0;
-  }
-
-  .glass-image figcaption {
-    display: block;           /* asegura que se muestre */
-    width: 100%;
-    font-size: 14px;
-    padding: 6px 10px;
-    background: #e7e7e7;
-    color: #000;
-    border-radius: 0 0 15px 15px;
-  }
-
-  /* --- Footer --- */
-  .site-footer {
-    padding: 20px 0;
-  }
-
-  .footer-container {
-    flex-direction: column;
-    gap: 16px;
-    text-align: center;
-  }
-
-  .footer-links {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .footer-copy {
-    font-size: 12px;
-  }
-
-  /* --- Contacto (formulario) --- */
-  .formulario-retro {
-    flex-direction: column;
-    gap: 20px;
-    padding: 30px 20px;
-  }
-
-  .formulario-retro h2 {
-    font-size: 28px;
-    text-align: center;
-  }
-
-  .formulario-retro input,
-  .formulario-retro textarea,
-  .formulario-retro button {
-    max-width: none;
-    width: 100%;
-    font-size: 16px;
-  }
-
-  .formulario-columna {
-    flex: 1 1 100%;
-    min-width: auto;
-  }
-
-  .formulario-imagen {
-    order: 2;
-    height: 180px;
-  }
-
-  .formulario-imagen img {
-    height: 100%;
-    object-fit: cover;
-  }
-
-  /* --- Equipo (grid) --- */
-  .team-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .photo-circle {
-    width: 140px;
-    height: 140px;
-  }
-
-  .nombre {
-    font-size: 14px;
   }
 }
