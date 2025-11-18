@@ -11,6 +11,7 @@
   max-width: 1200px;
   height: 70px;
   padding: 0 35px;
+  box-sizing: border-box; /* incluye padding/border en el cálculo */
   display: flex;
   align-items: center;
   z-index: 100;
@@ -255,6 +256,8 @@ body.fonts-loaded .glass-header ul li {
   margin: 0;            /* Elimina margen extra */
 }
 
+
+
 /* Ocultar el checkbox sin cuadrito */
 input[type="checkbox"] {
   position: absolute;
@@ -289,12 +292,11 @@ input[type="checkbox"] {
     left: 0;
     transform: none;
     width: 100%;
-    max-width: 100%;
-    margin: 10px 0;
+    max-width: 100%;        /* evita que se pase del viewport */
+    margin: 10px auto;
     padding: 10px 15px;
     box-sizing: border-box;
-    height: auto;
-    overflow-x: hidden; /* evita scroll lateral */
+    overflow-x: hidden;     /* elimina scroll lateral */
   }
 
   .mobile-menu-toggle {
