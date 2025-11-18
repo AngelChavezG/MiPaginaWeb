@@ -290,8 +290,8 @@ input[type="checkbox"] {
   .glass-header {
   position: fixed;
   top: 0;
-  left: 40%;
-  transform: translateX(-40%);
+  left: 50%;
+  transform: translateX(-50%);
   width: 100%;
   margin: 0 auto;              /* centra horizontalmente */
   max-width: 1200px;   /* igual que las secciones */
@@ -326,6 +326,7 @@ input[type="checkbox"] {
   }
 
 }
+
 
 
 
