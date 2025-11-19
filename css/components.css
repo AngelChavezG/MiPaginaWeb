@@ -152,7 +152,7 @@ body.fonts-loaded .glass-header ul li {
   font-family: "Merriweather", serif;    /* Tipografía para cuerpo de texto */
   font-weight: 400;                      /* Peso normal */
   text-align: justify;                   /* Justifica el texto */
-  line-height: 1.6;                      /* Altura de línea para legibilidad */
+  line-height: 1.5;                      /* Altura de línea para legibilidad */
   color: #ffffff;                        /* Color del texto */
   margin-top: 0;                         /* Sin margen superior */
   margin-bottom: 20px;                   /* Espacio inferior entre párrafos */
@@ -289,6 +289,13 @@ input[type="checkbox"] {
    Responsive navegación
    =========================== */
 @media (max-width: 768px) {
+  .blue-background {
+    background: linear-gradient(150deg, #0f1440, #0033aa); /* gradiente estático */
+    background-size: cover;
+    background-attachment: fixed; /* fondo fijo */
+    animation: none;              /* sin animación */
+  }
+
   .glass-header {
   position: fixed;
   top: 0;
@@ -345,15 +352,15 @@ input[type="checkbox"] {
   }
 
   .header-txt h1 {
-    font-size: 22px !important;
-    line-height: 1.2;
+    font-size: 42px !important;
+    line-height: 1;
     margin-bottom: 12px;
     max-width: 90vw;
     word-break: break-word;
   }
 
   .header-txt h2 {
-    font-size: 18px !important;
+    font-size: 38px !important;
     margin-bottom: 10px;
   }
 
@@ -390,10 +397,15 @@ input[type="checkbox"] {
     margin-right: auto;
   }
 
+  .glass-section h2{
+    font-size: 32px;
+  }
+
   .glass-text {
     flex: 1 1 auto;
     padding-right: 0;         /* elimina espacio lateral */
     width: 100%;
+    font-size: 14px;
   }
 
   .glass-image,
@@ -406,8 +418,8 @@ input[type="checkbox"] {
 
   .glass-image img {
     width: 100%;
-    height: auto;             /* ya no altura fija */
-    border-radius: 15px;
+    height: auto;             /* sin altura fija */
+    border-radius: 15px 15px 0 0; /* solo esquinas superiores redondeadas */
   }
 
   .glass-image figcaption {

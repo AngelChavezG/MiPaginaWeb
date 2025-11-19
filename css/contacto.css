@@ -103,7 +103,9 @@
   font-size: 16px;
   background-color: rgba(255, 255, 255, 0.8);
   width: 100%;               /* Ocupa todo el ancho disponible */
-  max-width: 600px;          /* Elimina cualquier límite de ancho */
+  resize: vertical;        /* solo permite redimensionar en altura */
+  max-height: 200px;       /* altura máxima */
+  min-height: 50px;       /* altura mínima para comodidad */
   display: block;            /* Asegura que no se limiten por inline */
   margin: 0 auto; 
   box-sizing: border-box;           /* Centra los campos si el contenedor es más ancho */
@@ -167,6 +169,9 @@
   form input,
   form textarea {
     width: 100%;           /* ocupan todo el ancho disponible */
+    resize: vertical;        /* solo permite redimensionar en altura */
+    max-height: 200px;       /* altura máxima */
+    min-height: 50px;       /* altura mínima para comodidad */
     margin-bottom: 16px;   /* espacio entre campos */
     padding: 10px;
     border-radius: 8px;
