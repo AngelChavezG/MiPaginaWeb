@@ -142,7 +142,14 @@
     </div>
   </footer>
 
-  <!-- Scroll -->
+  <!-- Cargar fuentes -->
+  <script>
+  document.fonts.ready.then(() => {
+    document.body.classList.add('fonts-loaded');
+  });
+  </script>
+
+  <!-- Script scroll -->
   <script>
   const sections = document.querySelectorAll("section");
   const navLinks = document.querySelectorAll(".nav-links li a");
@@ -169,10 +176,20 @@
   });
   </script>
 
+  <!-- Script Menú móvil hamburguesa -->
   <script>
-  document.fonts.ready.then(() => {
-    document.body.classList.add('fonts-loaded');
-  });
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+    // Abrir/cerrar menú al pulsar el botón
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+    // Cerrar menú automáticamente al pulsar un enlace
+    menu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        menu.classList.add('hidden');
+      });
+    });
   </script>
   
 </body>
