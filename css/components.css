@@ -135,7 +135,7 @@ body.fonts-loaded .glass-header ul li {
   color: #00ccff;                        /* Color del texto */
   font-family: "Special Gothic", sans-serif; /* Tipografía */
   font-optical-sizing: auto;             /* Ajuste óptico automático */
-  font-variation-settings: "wght" 600, "wdth" 87.5; /* Peso y ancho (semibold, semicondensed) */
+  font-variation-settings: "wght" 700, "wdth" 87.5; /* Peso y ancho (semibold, semicondensed) */
   font-size: 22px;                       /* Tamaño de fuente */
   margin-bottom: 5px;                    /* Espacio inferior reducido */
 }
@@ -353,7 +353,7 @@ input[type="checkbox"] {
 
   .header-txt h1 {
     font-size: 42px !important;
-    line-height: 1;
+    line-height: 1.2;
     margin-bottom: 12px;
     max-width: 90vw;
     word-break: break-word;
@@ -361,6 +361,7 @@ input[type="checkbox"] {
 
   .header-txt h2 {
     font-size: 38px !important;
+    line-height: 1.2;
     margin-bottom: 10px;
   }
 
