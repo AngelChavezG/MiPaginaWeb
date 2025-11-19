@@ -184,7 +184,7 @@
     toggle.addEventListener('click', () => {
       menu.classList.toggle('hidden');
     });
-    // Cerrar menú automáticamente al pulsar un enlace
+    // Cerrar menú automáticamente al pulsar cualquier enlace
     menu.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
         menu.classList.add('hidden');
