@@ -1,62 +1,3 @@
-/* Contenedor glass general */
-.glass-section.equipo {
-  margin: 60px auto;
-}
-
-/* Título separado visualmente */
-.equipo-header {
-  width: 100%;
-  box-sizing: border-box;
-  text-align: left; /* ← alinea el contenido a la izquierda */
-}
-
-.equipo-header h2 {
-  color: #ffffff;                        /* Color del texto del título */
-  font-family: "Special Gothic", sans-serif; /* Tipografía específica */
-  font-optical-sizing: auto;             /* Ajuste óptico automático de la fuente variable */
-  font-variation-settings: "wght" 670, "wdth" 75; /* Peso y ancho personalizados (semibold, condensed) */
-  font-size: 36px;                       /* Tamaño de fuente */
-  margin-bottom: 20px;                   /* Espacio inferior respecto al siguiente elemento */
-  width: fit-content;                    /* El ancho se ajusta al texto */
-  position: relative;                    /* Necesario para posicionar el pseudo-elemento ::after */
-}
-
-/* Grid horizontal de fotos */
-.team-grid {
-  width: 100%;
-  box-sizing: border-box;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  flex: 1 1 45%;
-  gap: 40px;
-  justify-items: center;
-}
-
-.team-member {
-  text-align: center;
-}
-
-.photo-circle {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-  margin-bottom: 15px;
-}
-
-.photo-circle img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.nombre {
-  font-size: 16px;
-  font-weight: 400;
-  color: #ffffff;
-}
-
 .formulario-retro {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(20px);
@@ -159,23 +100,33 @@
    Responsive navegación
    =========================== */
 @media (max-width: 768px) {
-  form label {
-    display: block;        /* asegura que cada label ocupe toda la línea */
-    text-align: left;      /* alinea el texto a la izquierda */
-    margin-bottom: 8px;    /* espacio debajo del label */
-    font-weight: 600;      /* opcional: resalta el texto */
+  .formulario-retro {
+    flex-direction: column;   /* apila columnas */
+    justify-content: center;  /* centra verticalmente */
+    align-items: center;      /* centra horizontalmente */
+    margin: 0 auto;           /* asegura centrado del contenedor */
+    margin-top: 120px;
+    padding: 30px 20px;       /* reduce padding en móvil */
   }
 
-  form input,
-  form textarea {
-    width: 100%;           /* ocupan todo el ancho disponible */
-    resize: vertical;        /* solo permite redimensionar en altura */
-    max-height: 200px;       /* altura máxima */
-    min-height: 50px;       /* altura mínima para comodidad */
-    margin-bottom: 16px;   /* espacio entre campos */
-    padding: 10px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-  } 
+  .formulario-retro h2 {
+    text-align: center;       /* título centrado en móvil */
+  }
+
+  .formulario-retro label {
+  font-weight: 500;
+  font-size: 18px;
+  color: #ffffff;
+  text-align: left;   /* fuerza alineación a la izquierda */
+  display: block;     /* asegura que ocupen toda la línea */
+  margin-bottom: 6px; /* separación con el input */
+}
+
+  .formulario-retro input,
+  .formulario-retro textarea,
+  .formulario-retro button {
+    max-width: 400px;         /* ancho controlado */
+    margin: 0 auto;           /* centrado horizontal */
+  }
+
 }
