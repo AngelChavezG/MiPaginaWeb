@@ -51,7 +51,7 @@
 
 .nav-links li a {
   font-family: "Special Gothic", sans-serif; /* Tipografía de enlaces */
-  font-variation-settings: "wght" 700, "wdth" 87.5;
+  font-variation-settings: "wght" 700, "wdth" 80;
   font-style: normal;
   color: #ffffff;
   font-size: 1rem;
@@ -90,7 +90,7 @@ body.fonts-loaded .glass-header ul li {
    Sección tipo glass
    =========================== */
 .glass-section {
-  background: rgba(255, 255, 255, 0.1); /* Fondo semitransparente para efecto glass */
+  background: linear-gradient(160deg, #0040ca56 0%, #ffffff0d 50%);/* Fondo semitransparente*/
   backdrop-filter: blur(20px);           /* Difumina el fondo detrás del contenedor */
   border-radius: 20px;                   /* Bordes redondeados */
   padding: 60px 40px;                    /* Espaciado interno (arriba/abajo, izquierda/derecha) */
@@ -112,7 +112,7 @@ body.fonts-loaded .glass-header ul li {
   font-optical-sizing: auto;             /* Ajuste óptico automático de la fuente variable */
   font-variation-settings: "wght" 670, "wdth" 75; /* Peso y ancho personalizados (semibold, condensed) */
   font-size: 36px;                       /* Tamaño de fuente */
-  margin-bottom: 20px;                   /* Espacio inferior respecto al siguiente elemento */
+  margin-bottom: 12px;                   /* Espacio inferior respecto al siguiente elemento */
   width: fit-content;                    /* El ancho se ajusta al texto */
   position: relative;                    /* Necesario para posicionar el pseudo-elemento ::after */
 }
@@ -137,7 +137,7 @@ body.fonts-loaded .glass-header ul li {
   font-optical-sizing: auto;             /* Ajuste óptico automático */
   font-variation-settings: "wght" 700, "wdth" 87.5; /* Peso y ancho (semibold, semicondensed) */
   font-size: 22px;                       /* Tamaño de fuente */
-  margin-bottom: 5px;                    /* Espacio inferior reducido */
+  margin-bottom: 0px;                    /* Espacio inferior reducido */
 }
 
 /* ===========================
@@ -155,7 +155,7 @@ body.fonts-loaded .glass-header ul li {
   line-height: 1.5;                      /* Altura de línea para legibilidad */
   color: #ffffff;                        /* Color del texto */
   margin-top: 0;                         /* Sin margen superior */
-  margin-bottom: 20px;                   /* Espacio inferior entre párrafos */
+  margin-bottom: 12px;                   /* Espacio inferior entre párrafos */
 }
 
 /* ===========================
@@ -189,7 +189,7 @@ body.fonts-loaded .glass-header ul li {
    Descripción de imagen
    =========================== */
 .glass-image figcaption {
-  font-size: 14px; /* Tamaño de texto */
+  font-size: 16px; /* Tamaño de texto */
   color: #000; /* Texto negro */
   background: #e7e7e7; /* Fondo gris claro */
   padding: 8px 12px; /* Espaciado interno */
@@ -254,8 +254,6 @@ body.fonts-loaded .glass-header ul li {
 .footer-copy p {
   margin: 0;            /* Elimina margen extra */
 }
-
-
 
 /* Ocultar el checkbox sin cuadrito */
 input[type="checkbox"] {
@@ -340,7 +338,7 @@ input[type="checkbox"] {
     text-align: center;
     width: 100%;
     max-width: 1200px;        /* igual que las secciones */
-    margin-top: 120px; /* 70px de la barra + 20px de su margen + aire extra */
+    margin-top: 140px; /* 70px de la barra + 20px de su margen + aire extra */
     margin-bottom: 35px; /* igual que las secciones */
     padding: 0 16px;          /* mismo padding lateral */
     box-sizing: border-box;
@@ -354,19 +352,19 @@ input[type="checkbox"] {
   .header-txt h1 {
     font-size: 42px !important;
     line-height: 1.2;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
     max-width: 90vw;
     word-break: break-word;
   }
 
   .header-txt h2 {
-    font-size: 34px !important;
+    font-size: 28px !important;
     line-height: 1.2;
     margin-bottom: 10px;
   }
 
   .header-txt p {
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 12px;
   }
 
@@ -406,7 +404,7 @@ input[type="checkbox"] {
     flex: 1 1 auto;
     padding-right: 0;         /* elimina espacio lateral */
     width: 100%;
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .glass-image,

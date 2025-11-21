@@ -1,7 +1,7 @@
 /* ===========================
    Fuentes y reset
    =========================== */
-@import url('https://fonts.googleapis.com/css2?family=Special+Gothic:wdth,wght@87.5,400..700&display=swap'); /* Fuente global página*/
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic:wdth,wght@75..125,400..700&display=swap'); /* Fuente global página*/
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:opsz@18..144&display=swap'); /* Fuente para cuerpo de texto */
 
 * {
@@ -19,7 +19,7 @@ body {
   font-size: 1rem; /* Tamaño de fuente cuerpo  */
   font-family: "Special Gothic", sans-serif; /* Tipografía específica */
   font-optical-sizing: auto;             /* Ajuste óptico automático de la fuente variable */
-  font-variation-settings: "wght" 500, "wdth" 75; /* Peso y ancho personalizados (semibold, condensed) */
+  font-variation-settings: "wght" 600, "wdth" 80; /* Peso y ancho personalizados (semibold, condensed) */
 
   display: flex;
   flex-direction: column;
@@ -83,26 +83,28 @@ img {
 .header-txt h1 {
   font-family: "Special Gothic", sans-serif; /* Tipografía específica */
   font-optical-sizing: auto;             /* Ajuste óptico automático de la fuente variable */
-  font-variation-settings: "wght" 700, "wdth" 75; /* Peso y ancho personalizados (semibold, condensed) */
+  font-variation-settings: "wght" 700, "wdth" 87.5; /* Peso y ancho personalizados (semibold, semicondensed) */
   font-size: 78px;
   line-height: 1;
   color: #FFFFFF;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 .header-txt h2 {
   font-family: "Special Gothic", sans-serif; /* Tipografía específica */
   font-optical-sizing: auto;             /* Ajuste óptico automático de la fuente variable */
-  font-variation-settings: "wght" 600, "wdth" 87.5; /* Peso y ancho personalizados (semibold, condensed) */
+  font-variation-settings: "wght" 700, "wdth" 87.5; /* Peso y ancho personalizados (semibold, semicondensed) */
   font-size: 38px;
-  line-height: 0.5;
+  text-transform: uppercase;
+  font-style: italic;
+  line-height: 1;
   color: #FFFFFF;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
 
 .header-txt p {
-  font-weight: 500;
-  font-size: 20px;
+  font-variation-settings: "wght" 500, "wdth" 75; /* Peso y ancho personalizados (medium, condensed) */
+  font-size: 22px;
   color: #C1C1C1;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -125,6 +127,22 @@ img {
 .btn:hover {
   background: linear-gradient(135deg, #0022aa 0%, #00eaff 100%);
   box-shadow: 0 0 30px
+}
+
+.bullet {
+  position: relative;
+  padding-left: 16px; /* espacio para la viñeta */
+}
+
+.bullet::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.6em;             /* alineación vertical */
+  width: 8px;
+  height: 8px;
+  background-color: #00ccff; /* color de la viñeta */
+  border-radius: 50%;        /* círculo perfecto */
 }
 
 /* Scroll */

@@ -1,5 +1,5 @@
 .formulario-retro {
-  background: rgba(255, 255, 255, 0.1);
+  background: linear-gradient(160deg, #0040ca56 0%, rgba(255, 255, 255, 0.1) 50%);/* Fondo semitransparente*/
   backdrop-filter: blur(20px);
   border-radius: 20px;
   padding: 60px 40px;
@@ -53,19 +53,17 @@
 }
 
 .formulario-retro button {
-  background-color: #044ebe;
+  background-color: #0040ca;
   color: white;
   padding: 12px 16px;
   border: none;
   border-radius: 10px;
   font-family: "Special Gothic", sans-serif; /* Tipografía */
   font-optical-sizing: auto;             /* Ajuste óptico automático */
-  font-variation-settings: "wght" 500, "wdth" 87.5; /* Peso y ancho (semibold, semicondensed) */
+  font-variation-settings: "wght" 600, "wdth" 100; /* Peso y ancho (semibold, semicondensed) */
   font-size: 16px;                       /* Tamaño de fuente */
-  text-transform: uppercase;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  max-width: 600px;
   width: 100%;
   margin: 0 auto;
   display: block;
@@ -73,7 +71,7 @@
 }
 
 .formulario-retro button:hover {
-  background-color: #023685;
+  background-color: #1c68da;
 }
 
 .formulario-columna {
