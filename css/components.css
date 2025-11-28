@@ -185,6 +185,7 @@ body.fonts-loaded .glass-header ul li {
   flex-direction: column;    /* Apila las imágenes verticalmente */
   gap: 20px; /* Espacio entre cada imagen */
 }
+
 /* ===========================
    Descripción de imagen
    =========================== */
@@ -366,13 +367,6 @@ input[type="checkbox"] {
   .header-txt p {
     font-size: 18px;
     margin-bottom: 12px;
-  }
-
-  .header-img img {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    margin: 16px 0;
   }
 
   .btn {
