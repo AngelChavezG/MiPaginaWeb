@@ -422,6 +422,13 @@ input[type="checkbox"] {
     width: 100%;
   }
 
+  .slide {
+    flex: 0 0 100%; /* cada slide ocupa todo el ancho */
+  }
+  .slide img {
+    height: 100%; /* cubre toda la altura del contenedor */
+  }
+
   .footer-container {
     flex-direction: column;   /* apila logo y enlaces */
     justify-content: center;  /* centra verticalmente */
