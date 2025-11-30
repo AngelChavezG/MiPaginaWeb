@@ -340,7 +340,7 @@ input[type="checkbox"] {
     width: 95%; /* aire lateral móvil, si se quiere llenar toda la pantalla eliminar*/ 
     max-width: 1200px;        /* igual que las secciones */
     margin-top: 140px; /* 70px de la barra + 20px de su margen + aire extra */
-    margin-bottom: 35px; /* igual que las secciones */
+    margin-bottom: 0px; /* elimina el padding inferior de 35px de la versión de escritorio */
     box-sizing: border-box;
     padding: 30px 20px;          /* mismo padding lateral */
   }
